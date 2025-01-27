@@ -1,0 +1,43 @@
+
+1) Update Your System
+sudo apt update 
+sudo apt upgrade
+
+2) Install Snort 
+sudo apt install snort
+when installing the new window will open. Clear the default ip address and give your machine ip address example : 192.168.1.1/24
+
+3) verify snort Installation
+snort -v
+
+Configuration
+1) Define your local network
+paste this command
+sudo nano /etc/snort/snort.conf
+
+
+2) find  var HOME_NET in snort.conf file 
+edit 
+var HOME_NET <your ip address >
+
+
+Running Snort
+
+1. Run Snort in IDS Mode
+
+sudo snort -A console -q -c /etc/snort/snort.conf -i <interface>
+
+-A - Displays logs in the terminal
+-q - Displays only critical logs 
+-c - sets path to conf file
+-i - sets network interface
+
+Note : No need to add any rules to detect suspicious traffic.
+
+For more Information vist : https://www.snort.org/documents
+
+License
+This project is licensed under the MIT License
+
+
+
