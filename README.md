@@ -3,11 +3,11 @@
 ## Overview
 Snort is a powerful open source network intrusion detection system (IDS) that monitors network traffic and detects suspicious activities based on predefined rules.
 
-In this project, I configured Snort to detect and log suspicious traffic generated during Nmap scans. The setup runs purely in IDS mode (inline mode disabled), meaning Snort only monitors and logs suspicious activity without interfering with the network flow.
 
-The rules used in this setup are the default pre-configured rules no custom modifications were made to the snort.conf file. The goal was to understand how Snort identifies and logs network anomalies such as port scans or SYN floods using its built in detection capabilities.
+This repo demonstrates a home lab using **Snort (IDS)** installed on **Linux Mint** to monitor and log suspicious network activity. A separate machine (Kali) was used to generate test traffic (Nmap scans). Snort captures alerts on the Mint host and writes them to the alert log. A small Python script is included to tail the alert file and print readable notifications.
 
-A demo video is included to showcase real-time monitoring and how alerts are generated when suspicious traffic is detected.
+The setup runs purely in IDS mode (inline mode disabled), meaning Snort only monitors and logs suspicious activity without interfering with the network flow.
+
 
 ## Features
 - Real time monitoring and logging of network traffic
@@ -17,5 +17,4 @@ A demo video is included to showcase real-time monitoring and how alerts are gen
 
 
 
-https://github.com/user-attachments/assets/542538ed-7e19-48f2-8e89-26edc621f423
 
