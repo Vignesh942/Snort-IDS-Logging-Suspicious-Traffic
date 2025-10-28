@@ -15,5 +15,7 @@ A demo video is included to showcase real-time monitoring and how alerts are gen
 - Automatic logging of suspicious packets for analysis
 - Ready for customization with additional Snort rules for advanced use cases
 
-## License
-This project is licensed under the MIT License.
+
+
+https://github.com/user-attachments/assets/542538ed-7e19-48f2-8e89-26edc621f423
+
