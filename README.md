@@ -1,31 +1,19 @@
-# Snort-IDS-Logging-Suspicious-Traffic
+# Snort IDS — Logging Suspicious Network Traffic
 
-Overview:
+## Overview
+Snort is a powerful open-source network intrusion detection system (IDS) that monitors network traffic and detects suspicious activities based on predefined rules.
 
-Snort is a powerful network intrusion detection system that can monitor network traffic and detect suspicious activity based on a set of rules. This project focuses on setting up Snort to log suspicious traffic using Nmap scans.
-I used only IDS to monitor and log the any suspicious traffic using snort (incline mode disabled )
-The rules used in config file are already pre configured I did not add any new rules to snort.conf file.
+In this project, I configured Snort to detect and log suspicious traffic generated during Nmap scans. The setup runs purely in IDS mode (inline mode disabled), meaning Snort only monitors and logs suspicious activity without interfering with the network flow.
 
-Take a look demo video for more understanding !!
+The rules used in this setup are the default pre-configured rules — no custom modifications were made to the snort.conf file. The goal was to understand how Snort identifies and logs network anomalies such as port scans or SYN floods using its built-in detection capabilities.
 
+A demo video is included to showcase real-time monitoring and how alerts are generated when suspicious traffic is detected.
 
+## Features
+- Real-time monitoring and logging of network traffic
+- Detection of common reconnaissance and scanning attacks (e.g., Nmap, SYN floods)
+- Automatic logging of suspicious packets for analysis
+- Ready for customization with additional Snort rules for advanced use cases
 
-Features
-1) Real-time monitoring of network traffic.
-
-2) Detection of common attacks (e.g., Nmap scans, SYN floods, etc.).
-
-3) Logging of suspicious traffic to a file.
-
-4) Customizable rules for specific use cases.
-   
-
-
-License
+## License
 This project is licensed under the MIT License.
-
-
-
-
-https://github.com/user-attachments/assets/987abb36-48b6-483e-a2e8-96edd9bcfbb8
-
