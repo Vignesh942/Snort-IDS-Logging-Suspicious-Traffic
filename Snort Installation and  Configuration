@@ -32,28 +32,6 @@ sudo snort -A console -q -c /etc/snort/snort.conf -i <interface>
 -c - sets path to conf file
 -i - sets network interface
 
-Snort Rules:
-
-# Detect TCP SYN scan (stealth scan)
-alert tcp any any -> any any (msg:"Nmap SYN Scan detected"; flags:S; threshold: type threshold, track by_src, count 10, seconds 10; sid:1000001; rev:1;)
-
-# Detect TCP Connect scan
-alert tcp any any -> any any (msg:"Nmap TCP Connect Scan detected"; flags:S,A; threshold: type threshold, track by_src, count 10, seconds 10; sid:1000002; rev:1;)
-
-# Detect NULL scan (no flags set)
-alert tcp any any -> any any (msg:"Nmap NULL Scan detected"; flags:0; threshold: type threshold, track by_src, count 5, seconds 10; sid:1000003; rev:1;)
-
-# Detect FIN scan
-alert tcp any any -> any any (msg:"Nmap FIN Scan detected"; flags:F; threshold: type threshold, track by_src, count 5, seconds 10; sid:1000004; rev:1;)
-
-# Detect Xmas scan (FIN, PSH, URG flags set)
-alert tcp any any -> any any (msg:"Nmap Xmas Scan detected"; flags:FPU; threshold: type threshold, track by_src, count 5, seconds 10; sid:1000005; rev:1;)
-
-# Detect UDP scan (large number of UDP packets to different ports)
-alert udp any any -> any any (msg:"Nmap UDP Scan detected"; threshold: type threshold, track by_src, count 10, seconds 10; sid:1000006; rev:1;)
-
-# Detect ICMP Ping scan
-alert icmp any any -> any any (msg:"Nmap ICMP Scan detected"; itype:8; threshold: type threshold, track by_src, count 5, seconds 10; sid:1000007; rev:1;)
 
 
 License
