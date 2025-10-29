@@ -10,10 +10,10 @@ The setup runs purely in IDS mode (inline mode disabled), meaning Snort only mon
 
 
 ## Features
-- Real time monitoring and logging of network traffic
-- Detection of common reconnaissance and scanning attacks (e.g., Nmap, SYN floods)
-- Automatic logging of suspicious packets for analysis
-- Ready for customization with additional Snort rules for advanced use cases
+- Real time monitoring and logging of network traffic.
+- Detection of common reconnaissance and scanning attacks (e.g., Nmap, SYN floods).
+- Automatic logging of suspicious packets for analysis.
+- Ready for customization with additional Snort rules for advanced use cases.
 
 
 
